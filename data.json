@@ -1,22 +1,19 @@
 {
-  "name": "Ancêtre principal",
+  "name": "ASSANVO TIEMELÉ",
+  "gender": "male",
   "children": [
-    {
-      "name": "Papa",
-      "children": [
-        {
-          "name": "Moi",
-          "children": []
-        },
-        {
-          "name": "Frère",
-          "children": []
-        }
-      ]
-    },
-    {
-      "name": "Tante",
-      "children": []
-    }
+    { "name": "TCHEMELE KOUTOUA", "gender": "male" },
+    { "name": "TIEMELÉ BROU", "gender": "male" },
+    { "name": "TIEMELÉ YABA", "gender": "female" },
+    { "name": "TIEMELÉ ASSANVO LAMBERT", "gender": "male" },
+    { "name": "TIEMELÉ ASSIÉ", "gender": "male" },
+    { "name": "TIEMELÉ N'VODJO", "gender": "male" },
+    { "name": "ALLOU EBAH", "gender": "male" },
+    { "name": "TIEMELÉ EBAH THÉRÈSE", "gender": "female" },
+    { "name": "TIEMELÉ ATTOBRA JOSEPH", "gender": "male" },
+    { "name": "TIEMELÉ AKOUBA AMÉLIE", "gender": "female" },
+    { "name": "TIEMELÉ MALAN", "gender": "male" },
+    { "name": "TIEMELÉ GNANKON", "gender": "female" },
+    { "name": "TIEMELÉ MAGNE", "gender": "female" }
   ]
 }
