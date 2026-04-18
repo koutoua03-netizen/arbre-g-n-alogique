@@ -1,16 +1,16 @@
 fetch("data.json")
   .then(res => res.json())
-  .then(data => drawTree(data));
+  .then(data => renderTree(data));
 
-function drawTree(data) {
-  const width = 1000;
-  const height = 600;
+function renderTree(data) {
+  const width = 1200;
+  const height = 700;
 
-  const svg = d3.select("#tree")
+  const svg = d3.select("body")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-    .call(d3.zoom().on("zoom", function (event) {
+    .call(d3.zoom().on("zoom", (event) => {
       svgGroup.attr("transform", event.transform);
     }));
 
@@ -18,33 +18,36 @@ function drawTree(data) {
 
   const root = d3.hierarchy(data);
 
-  const treeLayout = d3.tree().size([width, height]);
+  const treeLayout = d3.tree().size([width - 200, height - 200]);
   treeLayout(root);
 
-  svgGroup.selectAll("line")
+  // liens
+  svgGroup.selectAll(".link")
     .data(root.links())
     .enter()
     .append("line")
-    .attr("x1", d => d.source.x)
-    .attr("y1", d => d.source.y)
-    .attr("x2", d => d.target.x)
-    .attr("y2", d => d.target.y)
-    .attr("stroke", "#555");
+    .attr("class", "link")
+    .attr("x1", d => d.source.x + 100)
+    .attr("y1", d => d.source.y + 100)
+    .attr("x2", d => d.target.x + 100)
+    .attr("y2", d => d.target.y + 100);
 
-  svgGroup.selectAll("circle")
+  // nodes
+  const nodes = svgGroup.selectAll(".node")
     .data(root.descendants())
     .enter()
-    .append("circle")
-    .attr("cx", d => d.x)
-    .attr("cy", d => d.y)
-    .attr("r", 10)
-    .attr("fill", "green");
+    .append("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${d.x + 100},${d.y + 100})`);
 
-  svgGroup.selectAll("text")
-    .data(root.descendants())
-    .enter()
-    .append("text")
-    .attr("x", d => d.x + 12)
-    .attr("y", d => d.y + 4)
+  // avatars
+  nodes.append("circle")
+    .attr("r", 25)
+    .attr("fill", d => d.data.gender === "female" ? "#ff69b4" : "#3498db");
+
+  // texte
+  nodes.append("text")
+    .attr("dy", 45)
+    .attr("text-anchor", "middle")
     .text(d => d.data.name);
 }
