@@ -1,0 +1,22 @@
+{
+  "name": "Ancêtre principal",
+  "children": [
+    {
+      "name": "Papa",
+      "children": [
+        {
+          "name": "Moi",
+          "children": []
+        },
+        {
+          "name": "Frère",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Tante",
+      "children": []
+    }
+  ]
+}
