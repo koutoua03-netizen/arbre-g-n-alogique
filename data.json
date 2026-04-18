@@ -1,19 +1,19 @@
 {
   "name": "ASSANVO TIEMELÉ",
-  "gender": "male",
+  "photo": "images/pere.png",
   "children": [
-    { "name": "TCHEMELE KOUTOUA", "gender": "male" },
-    { "name": "TIEMELÉ BROU", "gender": "male" },
-    { "name": "TIEMELÉ YABA", "gender": "female" },
-    { "name": "TIEMELÉ ASSANVO LAMBERT", "gender": "male" },
-    { "name": "TIEMELÉ ASSIÉ", "gender": "male" },
-    { "name": "TIEMELÉ N'VODJO", "gender": "male" },
-    { "name": "ALLOU EBAH", "gender": "male" },
-    { "name": "TIEMELÉ EBAH THÉRÈSE", "gender": "female" },
-    { "name": "TIEMELÉ ATTOBRA JOSEPH", "gender": "male" },
-    { "name": "TIEMELÉ AKOUBA AMÉLIE", "gender": "female" },
-    { "name": "TIEMELÉ MALAN", "gender": "male" },
-    { "name": "TIEMELÉ GNANKON", "gender": "female" },
-    { "name": "TIEMELÉ MAGNE", "gender": "female" }
+    { "name": "TCHEMELE KOUTOUA", "photo": "images/child1.png" },
+    { "name": "TIEMELÉ BROU", "photo": "images/child2.png" },
+    { "name": "TIEMELÉ YABA", "photo": "images/child3.png" },
+    { "name": "TIEMELÉ ASSANVO LAMBERT", "photo": "images/child4.png" },
+    { "name": "TIEMELÉ ASSIÉ", "photo": "images/child5.png" },
+    { "name": "TIEMELÉ N'VODJO", "photo": "images/child6.png" },
+    { "name": "TIEMELÉ ALLOU EBAH", "photo": "images/child7.png" },
+    { "name": "TIEMELÉ EBAH THÉRÈSE", "photo": "images/child8.png" },
+    { "name": "TIEMELÉ ATTOBRA JOSEPH", "photo": "images/child9.png" },
+    { "name": "TIEMELÉ AKOUBA AMÉLIE", "photo": "images/child10.png" },
+    { "name": "TIEMELÉ MALAN", "photo": "images/child11.png" },
+    { "name": "TIEMELÉ GNANKON", "photo": "images/child12.png" },
+    { "name": "TIEMELÉ MAGNE", "photo": "images/child13.png" }
   ]
 }
